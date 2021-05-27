@@ -9,14 +9,14 @@ hamburger.addEventListener("click", () =>{
 });
 
 
+
 document.addEventListener('DOMContentLoaded', () => createNav());
 
 let navBar= [
 {title: 'Blog', link: 'Blog.html'},
 {title: 'About', link: 'About.html'},
-
-//{title: 'Creative Projects', link: 'Creative.html'},
-
+{title: 'Projects', link: 'Projects.html'},
+{title: 'Contact', link: 'Contact.html'}
 
 ];
 

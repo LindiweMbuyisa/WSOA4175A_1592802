@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/*Style sheet is for the contact section, About section, creative project section and inner sections.
+/*Navigation Bar- Desktop*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+
+}
+body{
+     background: linear-gradient(to bottom, #D0FB21, #9AFA12, #39EE04);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav{
+    height: 40px;
+    background-color: black;
+    
+}
+/*Navigation*/
+ul{
+    top:0;
+    background-color: black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    padding: 0px;
+
+    }
+    
+    ul li a{
+        padding: 0px 0px 15px 0px;
+        font-size: 80px;
+        color: transparent;
+        -webkit-text-stroke : 1px white;
+        font-weight: 900;
+        text-align: center;
+        text-decoration: none;
+    
+    }
+    ul li a:hover{
+        color: #CCFF00;
+        -webkit-text-stroke : 1px white;
+        transition: 0.5s;
+    }
+    
+    .hamburger-menu{
+            position: absolute;
+            cursor: pointer;
+            top: 3.5%;
+            right: 2%;
+            transform: translate(35%, -50%);
+            z-index: 11;
+            margin: auto;
+            padding: 0px;
+        }
+        
+        li{
+            float: none;
+            display: flex;
+            
+            
+        }
+        ul{
+            position: fixed;
+            background-color: #000000;
+            height: 100%;
+            display: none;
+        }
+        ul.active{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column-reverse;
+        }
+        li a:hover:not(.current-link){
+        background-color: #000000;
+}
+
+.logo a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Lato;
+    padding: 10px;
+    display: flex;
+    z-index: 13;
+    /*position: fixed;*/
+   
+
+}
+.logo{
+    padding: 0px;
+}
+
+a{
+    padding: 8px;
+    color: #000000;
+}
+
+.logo a:hover{
+    background-color: #CCFF00;
+ 
+ }
+ /*Contact Page*/
+ .lets-title{
+    font-size: 500px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+     padding-bottom: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+ }
+ .collab-title{
+    font-size: 500px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+
+ .email{
+
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+
+ }
+ .email-link{
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+ }   padding: 0px 0px 0px 0px;
+ 
+.column-left{
+    float: left;
+    flex: 1 1 auto;
+ }
+
+ .column-right{
+    float: right;
+    padding: 350px 0px 100px 0px;
+    flex: 1 1 auto;
+ }
+ 
+.column-container-contact{
+    display: flex;
+
+ }
+ .social-links{
+    display: flex;
+ }
+
+.twitter-link{
+ font-size: 16px;
+  flex: 1 1 auto;
+   padding: 20px 15px 25px 15px;
+
+}
+.behance-link{
+ font-size: 16px;
+  flex: 1 1 auto;
+     padding: 20px 15px 25px 15px;
+}
+.social-subtitle{
+    font-size: 18px;
+    font-family: Lato;
+   
+}
+.subtitle{
+    padding: 20px 15px 25px 20px;
+}
+
+.form{
+   
+    display: flex;
+   
+}
+.form-container{
+    
+}
+
+
+/*ABOUT PAGE*/
+
+.header{
+    font-size: 250px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 5px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+}
+.interactive-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 65px;
+}
+.designer-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+      padding: 30px 0px 15px 5px;
+}
+.paragraph{
+    font-size: 18px;
+    font-family: Lato;
+    float: right;
+    padding: 15px 40px 15px 560px;
+}
+
+.typography-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 5px;
+}
+.enthusiast-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+      padding: 30px 0px 15px 130px;
+}
+.contact-section{
+     font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    text-align: center;
+    padding: 275px 0px 150px 5px;
+}
+.social-twitter{
+    font-size: 16px;
+    font-family: Lato;
+    padding: 10px 150px 15px 150px;
+     font-weight: bold;
+     flex: 1 1 auto;
+}
+
+.social-behance{
+    font-size: 16px;
+    font-family: Lato;
+    padding: 10px 150px 15px 150px;
+     font-weight: bold;
+     flex: 1 1 auto;
+}
+
+.social-email{
+    font-size: 16px;
+    font-family: Lato;
+    padding: 20px 150px 15px 150px;
+    font-weight: bold;
+    flex: 1 1 auto;
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+}
+
+
+/*PROJECTS PAGE*/
+.peek-title{
+    font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 0px 20px 0px 20px;
+}
+.work-title{
+     font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+}
+/*PROJECTS INNER PAGE*/
+
+.canvas{
+    background-color: #000000;
+}
+.creative-title{
+    font-size: 250px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #9AF412;
+    /*color: #9AF412;*/
+    font-family: Pincoyablack;
+    padding: 110px 50px 0px 15px;
+}
+.creative-type{
+    font-size: 250px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #9AF412;
+    font-family: Pincoyablack;
+    padding: 50px 15px 0px 850px;
+}
+.paragraph-creative{
+    font-size: 20px;
+    color: white;
+    font-family: Lato;
+}
+
+/*Moblie*/
+
+@media screen and (max-width: 700px){
+
+ 
+    .logo a{
+    
+    padding: 8px;
+    position: absolute;
+
+    }
+    body{
+        background-color: #000000;
+    }
+
+    nav{
+    position: relative;
+        
+    }
+
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 5px;
+    padding: 0px;
+
+    }
+        
+
+    ul li a{
+        padding: 0px 0px 15px 0px;
+        font-size: 50px;
+        color: transparent;
+        -webkit-text-stroke : 1px white;
+        font-weight: 900;
+    
+    }
+    ul li a:hover{
+        color: #CCFF00;
+        -webkit-text-stroke : 1px white;
+        transition: 0.5s;
+    }
+    
+    .hamburger-menu{
+            position: absolute;
+            cursor: pointer;
+            top: 50%;
+            right: 6%;
+            transform: translate(35%, -50%);
+            z-index: 11;
+            margin: auto;
+            padding: 0px;
+        }
+        
+        li{
+            float: none;
+            display: flex;
+            
+            
+        }
+        ul{
+            position: fixed;
+            background-color: black;
+            height: 100%;
+            display: none;
+        }
+        ul.active{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column-reverse;
+        }
+        li a:hover:not(.current-link){
+        background-color: black;
+}
+ /*Contact Page*/
+ .lets-title{
+    font-size: 500px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+     padding-bottom: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+ }
+ .collab-title{
+    font-size: 500px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+
+ .email{
+
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+
+ }
+ .email-link{
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+ }
+.column-left{
+    float: left;
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 0px;
+ }
+
+ .column-right{
+    float: right;
+    padding: 350px 0px 100px 0px;
+    flex: 1 1 auto;
+ }
+ 
+.column-container-contact{
+    display: flex;
+
+ }
+ .social-links{
+    display: flex;
+ }
+
+.twitter-link{
+ font-size: 16px;
+  flex: 1 1 auto;
+   padding: 20px 15px 25px 15px;
+
+}
+.behance-link{
+ font-size: 16px;
+  flex: 1 1 auto;
+     padding: 20px 15px 25px 15px;
+}
+.social-subtitle{
+    font-size: 18px;
+    font-family: Lato;
+   
+}
+.subtitle{
+    padding: 20px 15px 25px 20px;
+}
+
+/*ABOUT PAGE*/
+
+.header{
+    font-size: 250px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 5px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+}
+.interactive-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 65px;
+}
+.designer-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+      padding: 30px 0px 15px 5px;
+}
+.paragraph{
+    font-size: 18px;
+    font-family: Lato;
+    float: right;
+    padding: 15px 40px 15px 560px;
+}
+
+.typography-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 5px;
+}
+.enthusiast-title{
+    font-size: 275px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+      padding: 30px 0px 15px 130px;
+}
+.contact-section{
+     font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    text-align: center;
+    padding: 275px 0px 150px 5px;
+}
+.social-twitter{
+    font-size: 16px;
+    font-family: Lato;
+    padding: 10px 150px 15px 150px;
+     font-weight: bold;
+     flex: 1 1 auto;
+}
+
+.social-behance{
+    font-size: 16px;
+    font-family: Lato;
+    padding: 10px 150px 15px 150px;
+     font-weight: bold;
+     flex: 1 1 auto;
+}
+
+.social-email{
+    font-size: 16px;
+    font-family: Lato;
+    padding: 20px 150px 15px 150px;
+    font-weight: bold;
+    flex: 1 1 auto;
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+}
+
+
+/*PROJECTS PAGE*/
+.peek-title{
+    font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 0px 20px 0px 20px;
+}
+.work-title{
+     font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+}
+/*PROJECTS INNER PAGE*/
+
+.canvas{
+    background-color: #000000;
+}
+.creative-title{
+    font-size: 250px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #9AF412;
+    /*color: #9AF412;*/
+    font-family: Pincoyablack;
+    padding: 110px 50px 0px 15px;
+}
+.creative-type{
+    font-size: 250px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #9AF412;
+    font-family: Pincoyablack;
+    padding: 50px 15px 0px 850px;
+}
+}
+
+    
+/*Tablet */
+@media screen and (max-width: 1024px) and (min-width: 700px){
+    
+
+
+  .logo a{
+    
+    padding: 8px;
+    position: absolute;
+
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 5px;
+    padding: 0px;
+
+    }
+        
+
+    ul li a{
+        padding: 0px 0px 15px 0px;
+        font-size: 90px;
+        color: transparent;
+        -webkit-text-stroke : 1px white;
+        font-weight: 900;
+    
+    }
+
+        ul li a:hover{
+        color: #CCFF00;
+        -webkit-text-stroke : 1px white;
+        transition: 0.5s;
+    }
+        
+    
+    .hamburger-menu{
+            position: absolute;
+            cursor: pointer;
+            top: 1.5%;
+            right: 1.5%;
+            transform: translate(20%, -40%);
+            z-index: 11;
+            margin:auto;
+            padding: 0px;
+        }
+        
+        li{
+            float: none;
+            display: flex;
+            
+            
+        }
+        ul{
+            position: fixed;
+            background-color: black;
+            height: 100%;
+            display: none;
+            transition: all 3s ease;
+        }
+        ul.active{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column-reverse;
+
+        }
+        li a:hover:not(.current-link){
+    background-color: #CCFF00;
+}
+ /*Contact Page*/
+ .lets-title{
+    font-size: 500px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+     padding-bottom: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+ }
+ .collab-title{
+    font-size: 500px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+
+ .email{
+
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+
+ }
+ .email-link{
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: bold;
+    padding: 1px 0px 0px 0px;
+ }
+.column-left{
+    float: left;
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 0px;
+ }
+
+ .column-right{
+    float: right;
+    padding: 350px 0px 100px 0px;
+    flex: 1 1 auto;
+ }
+ 
+.column-container-contact{
+    display: flex;
+
+ }
+ .social-links{
+    display: flex;
+ }
+
+.twitter-link{
+ font-size: 16px;
+  flex: 1 1 auto;
+   padding: 20px 15px 25px 15px;
+
+}
+.behance-link{
+ font-size: 16px;
+  flex: 1 1 auto;
+     padding: 20px 15px 25px 15px;
+}
+.social-subtitle{
+    font-size: 18px;
+    font-family: Lato;
+   
+}
+.subtitle{
+    padding: 20px 15px 25px 20px;
+}
+
+/*ABOUT PAGE*/
+
+.header{
+    font-size: 220px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 5px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+}
+.interactive-title{
+    font-size: 205px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 65px;
+}
+.designer-title{
+    font-size: 205px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+      padding: 30px 0px 15px 5px;
+}
+.paragraph{
+    font-size: 20px;
+    font-family: Lato;
+    float: right;
+    padding: 15px 40px 15px 560px;
+}
+
+.typography-title{
+    font-size: 205px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 30px 0px 15px 5px;
+}
+.enthusiast-title{
+    font-size: 201px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+      padding: 30px 0px 15px 130px;
+}
+.contact-section{
+     font-size: 200px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    text-align: center;
+    padding: 275px 0px 150px 5px;
+}
+.social-twitter{
+    font-size: 20px;
+    font-family: Lato;
+    padding: 10px 150px 15px 150px;
+     font-weight: bold;
+     flex: 1 1 auto;
+}
+
+.social-behance{
+    font-size: 20px;
+    font-family: Lato;
+    padding: 10px 150px 15px 150px;
+     font-weight: bold;
+     flex: 1 1 auto;
+}
+
+.social-email{
+    font-size: 20px;
+    font-family: Lato;
+    padding: 20px 150px 15px 150px;
+    font-weight: bold;
+    flex: 1 1 auto;
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+}
+
+
+/*PROJECTS PAGE*/
+.peek-title{
+    font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+    padding: 0px 20px 0px 20px;
+}
+.work-title{
+     font-size: 280px;
+    font-weight: bolder;
+    font-family: Pincoyablack;
+}
+/*PROJECTS INNER PAGE*/
+
+.canvas{
+    background-color: #000000;
+}
+.creative-title{
+    font-size: 250px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #9AF412;
+    /*color: #9AF412;*/
+    font-family: Pincoyablack;
+    padding: 110px 50px 0px 15px;
+}
+.creative-type{
+    font-size: 250px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #9AF412;
+    font-family: Pincoyablack;
+    padding: 50px 15px 0px 850px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
