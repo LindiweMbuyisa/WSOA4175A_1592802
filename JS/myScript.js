@@ -1,12 +1,14 @@
 //Back Button
+function Next(){
+	window.history.Next();
+}
+function Prev(){
+	window.history.Prev();
+}
 function Back(){
-	window.history.back();
-}
-function goForward(){
-	window.history.forward();
-}
-function pre(){
-	window.history.back();
+	window.history.Back();
 }
 
-
+function Submit(){
+	
+}
