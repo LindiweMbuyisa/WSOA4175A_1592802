@@ -33,24 +33,37 @@ ul{
     width: 100%;
     z-index: 10;
 }
-
 .bar1{
-	width: 30px;
+    width: 30px;
 	height: 2px;
-	background-color: black;
+	background-color: #000000;
 	margin: 5px;
 	padding: 0px;
     transform: translateY(8px);
+    
+}
+
+.bar1::after{
+    background-color: #FFFFFF;
 
 	}
+
+
 	.bar2{
 	width: 30px;
 	height: 2px;
-	background-color: black;
+	background-color: #000000;
 	margin: 5px;
 	padding: 0px;
 	transform: rotate(90deg);
-	}
+
+}
+    .bar2::after{
+        background-color: #FFFFFF;
+    }
+    
+    
+    
     
     ul li a{
         padding: 0px 0px 15px 0px;
@@ -107,6 +120,12 @@ ul{
   /* clip-path: circle(100% at 100%);*/
     
 }
+.bar1:active{
+ background-color: #FFFFFF;
+}
+.bar2:active{
+    background-color: #FFFFFF;
+}
 
 .logo a{
     color: white;
@@ -125,7 +144,7 @@ ul{
 .logo{
 	width: 55px;
 	height: auto;
-	padding: 5px 5px 0px 5px;
+    padding: 2px 2px 2px 2px;
 }
 .logo-img{
 	width: 55px;
@@ -196,17 +215,19 @@ a{
  }
 
 .twitter-link{
- font-size: 16px;
+ font-size: 18px;
   flex: 1 1 auto;
    padding: 20px 15px 25px 15px;
    font-weight: 700;
+   font-family: Lato;
 
 }
 .behance-link{
- font-size: 16px;
+ font-size: 18px;
   flex: 1 1 auto;
      padding: 20px 15px 25px 15px;
      font-weight: 700;
+     font-family: Lato;
 }
 .social-subtitle{
     font-size: 20px;
@@ -250,7 +271,7 @@ a{
     grid-area: Surname;
 
 }
-.e{
+.em{
     grid-area: Email;
 
 }
@@ -258,7 +279,7 @@ a{
     grid-area: Subject;
 
 }
-.c{
+.co{
     grid-area: Company;
 
 }
@@ -278,6 +299,7 @@ input{
 	font-size: 12px;
 	text-align: left;
 	padding-left: 5px;
+    font-weight: 900;
 }
  
 /*Chrome Extension*/
@@ -300,18 +322,31 @@ input{
 
 }
 .submit-btn{
-   border: none;
+   border: 1px #000000;
    color: #000000;
    background-color: transparent;
    font-size: 18px;
    font-family: Lato;
    font-weight: bolder;
-   padding: 20px 15px;
+   padding-top: 20px;
+   padding-bottom: 20px;
    cursor: pointer;
-   box-align:right;
+   margin-left: 1000px;
+   clip-path: polygon(14% 58%, 0% 50%, 21% 46%, 24% 35%, 33% 43%, 39% 29%, 49% 40%, 60% 23%, 67% 41%, 89% 26%, 80% 47%, 100% 46%, 88% 58%, 94% 72%, 70% 66%, 64% 71%, 55% 66%, 41% 75%, 37% 67%, 26% 75%, 21% 68%, 9% 70%);
 
 }
+.submit-btn:hover{
+    background-color: #FFFFFF;
+    clip-path: polygon(14% 58%, 0% 50%, 21% 46%, 24% 35%, 33% 43%, 39% 29%, 49% 40%, 60% 23%, 67% 41%, 89% 26%, 80% 47%, 100% 46%, 88% 58%, 94% 72%, 70% 66%, 64% 71%, 55% 66%, 41% 75%, 37% 67%, 26% 75%, 21% 68%, 9% 70%);
+    
+}
+.img-hover{
+    width: 150px;
+    height: auto;
+    margin-left: 1100px;
+    margin-top: -80px;
 
+}
 /*ABOUT PAGE*/
 
 .header{
@@ -410,6 +445,121 @@ input{
    padding: 15px 15px 15px 15px;
     font-weight: 400;
 }
+#grid-container{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	position: relative;
+	grid-template-columns: repeat(12, 8.3%);
+    grid-template-rows: repeat(15, 200px);
+
+}
+/*.content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 13rem);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-height: 300px;
+}*/
+.grid-item{
+	position: relative;
+	display: block;
+}
+.grid-item-img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+    
+}
+.a{
+	grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b{
+	grid-column-start: 6;
+	grid-column-end: 12;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+.c{
+	grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.d{
+	grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+.e{
+	
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.f{
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 8;
+	grid-row-end:10;
+}
+.g{
+	grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+.h{
+	grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+.i{
+	grid-column-start: 8;
+	grid-column-end: 13;
+	grid-row-start:12;
+	grid-row-end: 15;
+}
+.overlay-text{
+	position: absolute;
+	top: 19px;
+	left: 0;
+    bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	color: #FFFFFF;
+	font-family: Lato;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+.overlay-text:hover{
+	opacity: 1;
+
+}
+.title-text{
+	font-size: 15px;
+	font-weight: bold;
+
+}
+
+
 /*PROJECTS INNER PAGE*/
 
 .canvas{
@@ -468,36 +618,43 @@ input{
     font-size: 15px;
     font-family: lato;
     padding: 10px 20px;
-    color: white;
+    color: #FFFFFF;
 
 }
 .reference-link{
     font-size: 12px;
     font-family: lato;
     padding: 10px 20px;
-    color: white;
+    color: #FFFFFF;
 }
-.btn-prev {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
+.project-next-title{
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
     font-family: Lato;
-    font-size: 18px;
-    padding: 10px;
-    margin-left: 20px;
-    
-}
-.btn-next {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-family: Lato;
-    font-size: 18px;
-    padding-left: 1050px;
-   
-   
 }
 
+.nextbtn{
+    color: #CCFF00;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Lato;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 635px;
+    
+    
+}
+.backbtn{
+    color: #CCFF00;
+    text-decoration: #CCFF00;
+    display: inline-block;
+    font-family: Lato;
+    font-size: 15px;
+    padding: 10px;
+    
+}
 
 /*img{
     padding: 20px 20px;
@@ -646,7 +803,7 @@ input{
 
  .column-right{
     float: right;
-    padding: 60px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
     flex: 1 1 auto;
  }
  
@@ -661,18 +818,20 @@ input{
 .twitter-link{
  font-size: 18px;
   flex: 1 1 auto;
-   padding: 20px 15px 25px 15px;
+  padding: 25px 15px 25px 15px;
+   font-family: Lato;
 
 }
 .behance-link{
  font-size: 18px;
   flex: 1 1 auto;
-     padding: 20px 15px 25px 15px;
+  padding: 25px 15px 25px 15px;
+    font-family: Lato;
 }
 .social-subtitle{
     font-size: 15px;
     font-family: Lato;
-    padding: 0px 0px 0px 0px;
+    padding: 15px 0px 0px 0px;
     font-weight: 600;
    
 }
@@ -690,10 +849,11 @@ input{
     float: right;
     flex: 1 1 auto;
     padding-left: 0px;
-    padding-right: 78px;
+    padding-right: 35px;
+    padding-top: 20px;
 }
 .contact-form-wrapper{
-    width: 120%;
+    width: 100%;
     display: grid;
     grid-template-columns: [col-start] 40% [col-2] 10% [col-3] 40% [col-4] 10% [col-end];
 	grid-template-rows: repeat(4, 50%);
@@ -710,7 +870,7 @@ input{
     grid-area: Surname;
 
 }
-.e{
+.em{
     grid-area: Email;
 
 }
@@ -718,7 +878,7 @@ input{
     grid-area: Subject;
 
 }
-.c{
+.co{
     grid-area: Company;
 
 }
@@ -755,20 +915,32 @@ input{
     color: #000000;
 }
 #btn-wrapper{
-    padding: 20px 15px; 
+    padding: 70px 15px;
+    margin-top: 120px;
+    margin-left: 135px;
 
 }
 .submit-btn{
-   border: none;
-   color: #000000;
-   background-color: transparent;
-   font-size: 18px;
-   font-family: Lato;
-   font-weight: bolder;
-   cursor: pointer;
-   
-
-}
+    border: none;
+    color: #000000;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: Lato;
+    font-weight: bolder;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 0px;
+    text-align: center;
+    
+ 
+ }
+ .submit-btn:hover{
+     background-color: #FFFFFF;
+     clip-path: polygon('14% 60%, 0% 44%, 20% 45%, 23% 28%, 33% 40%, 39% 26%, 50% 42%, 63% 22%, 71% 40%, 85% 26%, 87% 42%, 100% 45%, 89% 59%, 92% 72%, 70% 66%, 64% 71%, 55% 66%, 41% 75%, 37% 67%, 26% 75%, 21% 68%, 9% 70%');
+     
+ }
 
  
 /*ABOUT PAGE*/
@@ -874,6 +1046,95 @@ input{
     padding: 15px 15px 15px 15px;
     font-weight: 400;
 }
+#grid-container{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	position: relative;
+	grid-template-columns: 100%;
+    grid-template-rows: repeat(18, 180px);
+    grid-row-gap: 15px;
+
+}
+/*.content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 13rem);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-height: 300px;
+}*/
+.grid-item{
+	position: relative;
+	
+}
+.grid-item-img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+
+}
+.a{
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 3;
+	grid-row-end: 5;
+}
+.c{
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.d{
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+.e{
+	
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+.f{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 11;
+	grid-row-end:13;
+}
+.g{
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 13;
+    grid-row-end: 15;
+}
+.h{
+	grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 15;
+    grid-row-end: 17;
+}
+.i{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start:17;
+	grid-row-end: 19;
+}
+
 /*PROJECTS INNER PAGE*/
 
 .canvas{
@@ -894,7 +1155,7 @@ input{
     color: transparent;
     -webkit-text-stroke: 1.5px #9AF412;
     font-family: Pincoyablack;
-    padding: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 20px;
 }
 .creative-paragraph{
     font-size: 14px;
@@ -932,6 +1193,33 @@ input{
     font-family: lato;
     padding: 10px 20px;
     color: white;
+}
+.project-next-title{
+    font-size: 30px;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.nextbtn{
+    color: #CCFF00;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Lato;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 140px;
+    
+    
+}
+.backbtn{
+    color: #CCFF00;
+    text-decoration: #CCFF00;
+    display: inline-block;
+    font-family: Lato;
+    font-size: 15px;
+    padding: 10px;
+    
 }
 }
 
@@ -1083,20 +1371,21 @@ input{
  }
 
 .twitter-link{
- font-size: 22px;
+ font-size: 30px;
   flex: 1 1 auto;
    padding: 20px 15px 25px 15px;
 
 }
 .behance-link{
- font-size: 22px;
+ font-size: 30px;
   flex: 1 1 auto;
      padding: 20px 15px 25px 15px;
 }
 .social-subtitle{
-    font-size: 20px;
+    font-size: 25px;
     font-family: Lato;
     font-weight: 600;
+    padding: 0px 50px 0px 15px;
    
 }
 .left{
@@ -1112,10 +1401,14 @@ input{
     float: right;
     flex: 1 1 auto;
     padding-left: 0px;
-    padding-right: 100px;
+    padding-right: 0px; 
+    display: block;
+    margin-right: 120px;
+    margin-top: 25px;
 }
 .contact-form-wrapper{
     width: 120%;
+    height: 100px;
     display: grid;
     grid-template-columns: [col-start] 40% [col-2] 10% [col-3] 40% [col-4] 10% [col-end];
 	grid-template-rows: repeat(4, 50%);
@@ -1132,7 +1425,7 @@ input{
     grid-area: Surname;
 
 }
-.e{
+.em{
     grid-area: Email;
 
 }
@@ -1140,7 +1433,7 @@ input{
     grid-area: Subject;
 
 }
-.c{
+.co{
     grid-area: Company;
 
 }
@@ -1157,7 +1450,7 @@ input{
 .input{
 	border: 1px solid black;
 	font-family: Lato;
-	font-size: 12px;
+	font-size: 18px;
 	text-align: left;
 	padding-left: 5px;
 }
@@ -1177,20 +1470,23 @@ input{
     color: #000000;
 }
 #btn-wrapper{
-    
+    margin-left: 660px;
+    margin-bottom: 130px;
 
 
 }
 .submit-btn{
-   border: none;
-   color: #000000;
-   background-color: transparent;
-   font-size: 18px;
-   font-family: Lato;
-   font-weight: bolder;
-   padding: 20px 15px;
-   cursor: pointer;
-   box-align:right;
+    border: 1px solid black;
+    color: #000000;
+    background-color: transparent;
+    font-size: 40px;
+    font-family: Lato;
+    font-weight: bolder;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: 0px;
 
 }
 
@@ -1291,6 +1587,94 @@ input{
     padding: 15px 15px 15px 5px;
     font-weight: 400;
 }
+#grid-container{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	position: relative;
+	grid-template-columns: repeat(12, 8.3%);
+    grid-template-rows: repeat(15, 200px);
+
+}
+/*.content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 13rem);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-height: 300px;
+}*/
+.grid-item{
+	position: relative;
+	
+}
+.grid-item-img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+
+}
+.a{
+	grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.b{
+	grid-column-start: 6;
+	grid-column-end: 12;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+.c{
+	grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.d{
+	grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+.e{
+	
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.f{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 8;
+	grid-row-end:10;
+}
+.g{
+	grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+.h{
+	grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 14;
+}
+.i{
+	grid-column-start: 8;
+	grid-column-end: 13;
+	grid-row-start:12;
+	grid-row-end: 15;
+}
+
 /*PROJECTS INNER PAGE*/
 
 .canvas{
@@ -1311,7 +1695,7 @@ input{
     color: transparent;
     -webkit-text-stroke: 1.5px #9AF412;
     font-family: Pincoyablack;
-    padding: 0px 0px 0px 320px;
+    padding: 0px 0px 0px 300px;
 }
 .creative-paragraph{
     font-size: 22px;
@@ -1349,6 +1733,33 @@ input{
     font-family: lato;
     padding: 0px 20px;
     color: white;
+}
+.project-next-title{
+    font-size: 35px;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.nextbtn{
+    color: #CCFF00;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Lato;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 450px;
+    
+    
+}
+.backbtn{
+    color: #CCFF00;
+    text-decoration: #CCFF00;
+    display: inline-block;
+    font-family: Lato;
+    font-size: 25px;
+    padding: 10px;
+    
 }
 
 }
